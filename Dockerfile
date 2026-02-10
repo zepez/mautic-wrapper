@@ -10,5 +10,3 @@ RUN a2dismod mpm_event mpm_worker || true \
 RUN mkdir -p /var/www/html/var/logs /var/www/html/var/cache \
     && chown -R www-data:www-data /var/www/html/var \
     && chmod -R u+rwX,g+rwX /var/www/html/var
-
-USER www-data
